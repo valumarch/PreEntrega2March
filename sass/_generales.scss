@@ -31,11 +31,16 @@ ul.navbar-nav a:hover {
     color: #FEF6C9 !important; 
 }
 
+@mixin text ($font-size, $color){
+    font-size: $font-size;
+    color: $color;
+}
+
 .titulo_pag{
     padding-top: 150px;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    font-size: 3em;
+    @include text(3em, $colorTitulos);
     font-weight: normal;
     letter-spacing: 5px;
     text-transform: uppercase;
@@ -135,6 +140,7 @@ ul.navbar-nav a:hover {
         }
     }
 }
+
 
 
 
