@@ -40,7 +40,7 @@ ul.navbar-nav a:hover {
     padding-top: 150px;
     text-align: center;
     font-family: 'Inter', sans-serif;
-    @include text(3em, $colorTitulos);
+    @include text(2.5em, $colorTitulos);
     font-weight: normal;
     letter-spacing: 5px;
     text-transform: uppercase;

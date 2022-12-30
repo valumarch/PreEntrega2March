@@ -35,7 +35,7 @@ ul.navbar-nav a:hover {
   padding-top: 150px;
   text-align: center;
   font-family: "Inter", sans-serif;
-  font-size: 3em;
+  font-size: 2.5em;
   color: #D4A373;
   font-weight: normal;
   letter-spacing: 5px;
@@ -184,8 +184,9 @@ ul.navbar-nav a:hover {
   margin-top: 20px;
 }
 
-.ofertas_cuadro {
+.ofertas-cuadro {
   background-color: #FEFAE0;
+  width: 60%;
   margin-top: 20px;
   height: 300px;
   padding-bottom: 40px;
@@ -193,17 +194,17 @@ ul.navbar-nav a:hover {
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
-.ofertas_cuadro h2 {
+.ofertas-cuadro h2 {
   text-transform: uppercase;
   margin-top: 30px;
   padding: 15px;
   font-family: "Poppins", sans-serif;
 }
-.ofertas_cuadro a {
+.ofertas-cuadro a {
   color: black;
   position: relative;
 }
-.ofertas_cuadro a::before {
+.ofertas-cuadro a::before {
   content: "";
   position: absolute;
   width: 100%;
@@ -216,14 +217,14 @@ ul.navbar-nav a:hover {
   transform: scaleX(0);
   transition: transform 0.3s ease-in-out;
 }
-.ofertas_cuadro a:hover::before {
+.ofertas-cuadro a:hover::before {
   transform-origin: left;
   transform: scaleX(1);
 }
-.ofertas_cuadro a:hover {
+.ofertas-cuadro a:hover {
   color: #D4A373;
 }
-.ofertas_cuadro p {
+.ofertas-cuadro p {
   padding-top: 30px;
   padding: 10px;
 }
@@ -237,12 +238,15 @@ ul.navbar-nav a:hover {
   text-transform: uppercase;
 }
 
-.index-1, .index-2, .index-3 {
+.index-1,
+.index-2,
+.index-3 {
   width: 60%;
   margin-top: 20px;
 }
 
-.index-1, .index-2 {
+.index-1,
+.index-2 {
   border-bottom: 2px solid #D4A373;
 }
 
@@ -255,15 +259,7 @@ ul.navbar-nav a:hover {
   height: auto;
 }
 
-@media all and (min-width: 320px) {
-  .ofertas_cuadro {
-    width: 60%;
-  }
-}
 @media all and (min-width: 768px) {
-  .ofertas_cuadro {
-    width: 40%;
-  }
   .index {
     flex-direction: row;
     justify-content: space-evenly;
@@ -301,17 +297,15 @@ ul.navbar-nav a:hover {
     width: 10vw;
     height: auto;
   }
+  .ofertas {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .ofertas-cuadro {
+    width: 35%;
+  }
 }
-.ofertas {
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-evenly;
-}
-
-.ofertas_cuadro {
-  width: 35%;
-}
-
 .contacto_titulo p {
   text-align: center;
   line-height: 1.8;
